@@ -40,3 +40,10 @@ label = "macro_brackets";
 #binding-cells = <0>;
 bindings = <&kp LBKT>, <&kp RBKT>, <&kp LEFT>;
 };
+pd3: prog_dvorak_rcurly_three_def {
+  compatible = "zmk,behavior-mod-morph"; 
+  label = "pd3"; 
+  mods = <(MOD_LSFT|MOD_RSFT)>; 
+  #binding-cells = <0>;
+  bindings = <&kp LBRC>, <&kp N3>;
+};
