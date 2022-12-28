@@ -31,6 +31,63 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+    
+    pd0: prog_dvorak_zero_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd0"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp EXCLAMATION>, <&kp N0>;
+    };
+    
+    pd9: prog_dvorak_nine_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd9"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp PLUS>, <&kp N9>;
+    };
+    
+    pd8: prog_dvorak_eight_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd8"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp RIGHT_BRACE>, <&kp N8>;
+    };
+    
+    pd7: prog_dvorak_seven_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd7"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
+    };
+    
+    pd6: prog_dvorak_six_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd6"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp RIGHT_BRACKET>, <&kp N6>;
+    };
+    
+    pd5: prog_dvorak_five_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd5"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_BRACKET>, <&kp N5>;
+    };
+    
+    pd4: prog_dvorak_four_def {
+        compatible = "zmk,behavior-mod-morph"; 
+        label = "pd4"; 
+        mods = <(MOD_LSFT|MOD_RSFT)>; 
+        #binding-cells = <0>;
+        bindings = <&kp LEFT_PARENTHESIS>, <&kp N4>;
+    };
+    
     pd3: prog_dvorak_three_def {
         compatible = "zmk,behavior-mod-morph"; 
         label = "pd3"; 
@@ -62,7 +119,7 @@
 
         default_layer {
             bindings = <
-  &kp ESC     &pd1     &pd2  &pd3  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                    &tog 1            &mo 2  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PLUS  &kp EXCLAMATION      &kp MINUS
+  &kp ESC     &pd1     &pd2  &pd3  &pd4  &pd5                    &tog 1            &mo 2  &pd6  &pd7  &pd8   &pd9  &pd0      &kp MINUS
   &kp TAB  &kp SEMICOLON     &kp COMMA         &kp DOT                 &kp P             &kp Y                     &none            &none              &kp F                  &kp G            &kp C      &kp R            &kp L  &kp BACKSLASH
  &kp CAPS          &kp A         &kp O           &kp E                 &kp U             &kp I                     &none         &kp LGUI          &kp LCTRL                                          &kp RCTRL         &kp RGUI          &none      &kp D   &kp H   &kp T   &kp N   &kp S          &kp SQT
     &sl 4      &kp MINUS         &kp Q           &kp J                 &kp K             &kp X                     &none            &none     &kp LEFT_ARROW                  &none            &none  &kp PG_UP            &none          &none      &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RIGHT_SHIFT
