@@ -39,21 +39,11 @@
 
         default_layer {
             bindings = <
-  &kp ESC     &kp DOLLAR     &kp EQUAL  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                    &tog 2            &mo 3  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PLUS  &kp EXCLAMATION      &kp MINUS
+  &kp ESC     &kp DOLLAR     &kp EQUAL  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET                    &tog 1            &mo 2  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp PLUS  &kp EXCLAMATION      &kp MINUS
   &kp TAB  &kp SEMICOLON     &kp COMMA         &kp DOT                 &kp P             &kp Y                     &none            &none              &kp F                  &kp G            &kp C      &kp R            &kp L  &kp BACKSLASH
  &kp CAPS          &kp A         &kp O           &kp E                 &kp U             &kp I                     &none         &kp LGUI          &kp LCTRL                                          &kp RCTRL         &kp RGUI          &none      &kp D   &kp H   &kp T   &kp N   &kp S  &kp SQT
-    &sl 5      &kp MINUS         &kp Q           &kp J                 &kp K             &kp X                     &none            &none     &kp LEFT_ARROW                  &none            &none  &kp PG_UP            &none          &none      &kp B   &kp M   &kp W   &kp V   &kp Z    &sl 5
-    &mo 2      &kp LCTRL  &kp LEFT_ALT   &kp AMPERSAND                 &mo 1          &kp BSPC            &macro_ctrl_up  &kp RIGHT_ARROW          &kp PG_DN              &kp ENTER        &kp SPACE      &mo 1        &kp SLASH  &kp RIGHT_ALT  &kp GRAVE  &tog 2
-            >;
-        };
-
-        layer_keypad {
-            bindings = <
- &trans  &trans            &trans  &kp UNDERSCORE             &trans  &trans            &trans   &mo 3  &trans     &trans         &trans       &trans  &trans  &trans
- &trans  &trans     &kp LESS_THAN       &kp MINUS   &kp GREATER_THAN  &trans             &none   &none  &trans  &kp CARET  &kp AMPERSAND  &kp PERCENT  &trans  &trans
- &trans  &trans    &kp LEFT_BRACE       &kp EQUAL    &kp RIGHT_BRACE  &trans             &none  &trans  &trans                                 &trans  &trans   &none  &trans  &kp LEFT_PARENTHESIS  &kp EXCLAMATION  &kp RIGHT_PARENTHESIS  &trans  &trans
- &trans  &trans  &kp LEFT_BRACKET        &kp PIPE  &kp RIGHT_BRACKET  &trans             &none   &none  &trans      &none          &none       &trans   &none   &none  &trans                &trans         &kp STAR                 &trans  &trans  &trans
- &trans  &trans            &trans          &trans              &none  &trans            &trans  &trans  &trans     &trans         &trans       &trans  &trans  &trans  &trans                &trans
+    &sl 4      &kp MINUS         &kp Q           &kp J                 &kp K             &kp X                     &none            &none     &kp LEFT_ARROW                  &none            &none  &kp PG_UP            &none          &none      &kp B   &kp M   &kp W   &kp V   &kp Z    &sl 4
+    &mo 1      &kp LCTRL  &kp LEFT_ALT   &kp AMPERSAND                 &none          &kp BSPC            &macro_ctrl_up  &kp RIGHT_ARROW          &kp PG_DN              &kp ENTER        &kp SPACE      &none        &kp SLASH  &kp RIGHT_ALT  &kp GRAVE  &tog 1
             >;
         };
 
@@ -61,7 +51,7 @@
             bindings = <
  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5           &kp F6            &tog 1   &mo 3  &kp F7  &kp F8        &kp F9  &kp F10  &kp F11  &kp F12
  &trans  &trans          &trans    &kp UP_ARROW           &trans           &trans             &none   &none  &trans  &trans  &kp UP_ARROW   &trans   &trans   &trans
- &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &trans             &to 4  &trans  &trans                         &trans   &trans    &none  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+ &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &trans             &to 3  &trans  &trans                         &trans   &trans    &none  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
  &trans  &trans          &trans          &trans           &trans           &trans             &none   &none  &trans   &none         &none   &trans    &none    &none  &trans          &trans          &trans           &trans  &trans  &trans
  &trans  &trans          &trans          &trans           &trans  &macro_goto_ide            &trans  &trans  &trans  &trans        &trans   &trans   &trans   &trans  &trans          &trans
             >;
