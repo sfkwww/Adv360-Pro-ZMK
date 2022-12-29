@@ -35,10 +35,13 @@
             label = "LEFT_HOME_ROW";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            tapping-term-ms = <100>;// <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13>;    // <---[[right-hand keys]]
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            hold-trigger-key-positions = <7 8 9 10 11 12 13>;// <---[[right-hand keys]]
         };
         rh_hm: right_hand_home_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -47,7 +50,10 @@
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
+
             hold-trigger-key-positions = <0 1 2 3 4 5 6>;
         };
         pd_sn: prog_dvorak_symbol_number {
@@ -55,7 +61,9 @@
             label = "SYMBOL_NUMBER";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
 
@@ -64,11 +72,11 @@
 
         default_layer {
             bindings = <
-        &kp ESC           &pd_sn DOLLAR N1          &pd_sn EQUAL N2           &pd_sn LBRC N3    &pd_sn LEFT_PARENTHESIS N4      &pd_sn LEFT_BRACKET N5          &tog 1            &mo 2            &pd_sn RIGHT_BRACKET N6       &pd_sn RIGHT_PARENTHESIS N7       &pd_sn RIGHT_BRACE N8       &pd_sn PLUS N9       &pd_sn EXCLAMATION N0     &kp MINUS
-        &kp TAB  &kp SEMICOLON     &kp COMMA        &kp DOT   &kp P     &kp Y           &none            &none           &kp F      &kp G      &kp C      &kp R      &kp L  &kp BACKSLASH
-       &kp CAPS          &lh_hm LSHFT A         &lh_hm LCRTL O          &lh_hm LALT E   &lh_hm LGUI U     &kp I           &none         &kp LGUI       &kp LCTRL                        &kp RCTRL   &kp RGUI          &none      &kp D   &rh_hm RGUI H   &rh_hm RALT T   &rh_hm RCTRL N   &rh_hm RSHFT S          &kp SQT
- &kp LEFT_SHIFT      &kp MINUS         &kp Q          &kp J   &kp K     &kp X           &none            &none  &kp LEFT_ARROW      &none      &none  &kp PG_UP      &none          &none      &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RIGHT_SHIFT
-          &mo 1      &kp LCTRL  &kp LEFT_ALT  &kp AMPERSAND   &none  &kp BSPC  &macro_ctrl_up  &kp RIGHT_ARROW       &kp PG_DN  &kp ENTER  &kp SPACE      &none  &kp SLASH  &kp RIGHT_ALT  &kp GRAVE  &tog 1
+        &kp ESC  &pd_sn DOLLAR N1  &pd_sn EQUAL N2  &pd_sn LBRC N3  &pd_sn LEFT_PARENTHESIS N4  &pd_sn LEFT_BRACKET N5          &tog 1            &mo 2  &pd_sn RIGHT_BRACKET N6  &pd_sn RIGHT_PARENTHESIS N7  &pd_sn RIGHT_BRACE N8  &pd_sn PLUS N9  &pd_sn EXCLAMATION N0      &kp MINUS
+        &kp TAB     &kp SEMICOLON        &kp COMMA         &kp DOT                       &kp P                   &kp Y           &none            &none                    &kp F                        &kp G                  &kp C           &kp R                  &kp L  &kp BACKSLASH
+       &kp CAPS    &lh_hm LSHFT A   &lh_hm LCTRL O   &lh_hm LALT E               &lh_hm LGUI U                   &kp I           &none         &kp LGUI                &kp LCTRL                                                           &kp RCTRL               &kp RGUI          &none      &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S          &kp SQT
+ &kp LEFT_SHIFT         &kp MINUS            &kp Q           &kp J                       &kp K                   &kp X           &none            &none           &kp LEFT_ARROW                        &none                  &none       &kp PG_UP                  &none          &none      &kp B          &kp M          &kp W           &kp V           &kp Z  &kp RIGHT_SHIFT
+          &mo 1         &kp LCTRL     &kp LEFT_ALT   &kp AMPERSAND                       &none                &kp BSPC  &macro_ctrl_up  &kp RIGHT_ARROW                &kp PG_DN                    &kp ENTER              &kp SPACE           &none              &kp SLASH  &kp RIGHT_ALT  &kp GRAVE         &tog 1
             >;
         };
 
