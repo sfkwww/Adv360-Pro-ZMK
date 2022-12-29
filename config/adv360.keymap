@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SYMBOL_NUMBER";
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             bindings =
                 <&kp>,
                 <&kp>;
