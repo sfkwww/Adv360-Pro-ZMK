@@ -32,29 +32,21 @@
         };
         lh_hm: left_hand_home_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_HOME_ROW";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;// <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings =
-                <&kp>,
-                <&kp>;
-
-            hold-trigger-key-positions = <7 8 9 10 11 12 13>;// <---[[right-hand keys]]
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
         rh_hm: right_hand_home_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_HOME_ROW";
+           compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings =
-                <&kp>,
-                <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 5 6>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
         pd0: prog_dvorak_zero_def {
             compatible = "zmk,behavior-mod-morph";
@@ -147,7 +139,6 @@
                 <&kp N1>;
         };
     };
-
     keymap {
         compatible = "zmk,keymap";
 
