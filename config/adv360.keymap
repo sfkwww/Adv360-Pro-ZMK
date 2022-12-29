@@ -56,14 +56,95 @@
 
             hold-trigger-key-positions = <0 1 2 3 4 5 6>;
         };
-        pd_sn: prog_dvorak_symbol_number {
+        pd0: prog_dvorak_zero_def {
             compatible = "zmk,behavior-mod-morph";
-            label = "SYMBOL_NUMBER";
+            label = "pd0";
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings =
-                <&kp>,
-                <&kp>;
+                <&kp EXCLAMATION>,
+                <&kp N0>;
+        };
+        pd9: prog_dvorak_nine_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd9";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp PLUS>,
+                <&kp N9>;
+        };
+        pd8: prog_dvorak_eight_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd8";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_BRACE>,
+                <&kp N8>;
+        };
+        pd7: prog_dvorak_seven_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd7";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_PARENTHESIS>,
+                <&kp N7>;
+        };
+        pd6: prog_dvorak_six_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd6";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_BRACKET>,
+                <&kp N6>;
+        };
+        pd5: prog_dvorak_five_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd5";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_BRACKET>,
+                <&kp N5>;
+        };
+        pd4: prog_dvorak_four_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd4";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&kp N4>;
+        };
+        pd3: prog_dvorak_three_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd3";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp LBRC>,
+                <&kp N3>;
+        };
+        pd2: prog_dvorak_two_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd2";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp EQUAL>,
+                <&kp N2>;
+        };
+        pd1: prog_dvorak_one_def {
+            compatible = "zmk,behavior-mod-morph";
+            label = "pd1";
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings =
+                <&kp DOLLAR>,
+                <&kp N1>;
         };
     };
 
@@ -72,7 +153,7 @@
 
         default_layer {
             bindings = <
-        &kp ESC  &pd_sn DOLLAR N1  &pd_sn EQUAL N2  &pd_sn LBRC N3  &pd_sn LEFT_PARENTHESIS N4  &pd_sn LEFT_BRACKET N5          &tog 1            &mo 2  &pd_sn RIGHT_BRACKET N6  &pd_sn RIGHT_PARENTHESIS N7  &pd_sn RIGHT_BRACE N8  &pd_sn PLUS N9  &pd_sn EXCLAMATION N0      &kp MINUS
+        &kp ESC           &pd1          &pd2           &pd3    &pd4      &pd5          &tog 1            &mo 2            &pd6       &pd7       &pd8       &pd9       &pd0      &kp MINUS
         &kp TAB     &kp SEMICOLON        &kp COMMA         &kp DOT                       &kp P                   &kp Y           &none            &none                    &kp F                        &kp G                  &kp C           &kp R                  &kp L  &kp BACKSLASH
        &kp CAPS    &lh_hm LSHFT A   &lh_hm LCTRL O   &lh_hm LALT E               &lh_hm LGUI U                   &kp I           &none         &kp LGUI                &kp LCTRL                                                           &kp RCTRL               &kp RGUI          &none      &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S          &kp SQT
  &kp LEFT_SHIFT         &kp MINUS            &kp Q           &kp J                       &kp K                   &kp X           &none            &none           &kp LEFT_ARROW                        &none                  &none       &kp PG_UP                  &none          &none      &kp B          &kp M          &kp W           &kp V           &kp Z  &kp RIGHT_SHIFT
