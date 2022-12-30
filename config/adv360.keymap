@@ -140,11 +140,11 @@
 
         default_layer {
             bindings = <
-        &kp ESC            &pd1            &pd2           &pd3           &pd4      &pd5          &tog 1            &mo 2            &pd6       &pd7       &pd8           &pd9      &pd0          &none
-        &kp TAB   &kp SEMICOLON       &kp COMMA        &kp DOT          &kp P     &kp Y           &none            &none           &kp F      &kp G      &kp C          &kp R     &kp L  &kp BACKSLASH
-       &kp CAPS  &lh_hm LSHFT A  &lh_hm LCTRL O  &lh_hm LALT E  &lh_hm LGUI U     &kp I           &none         &kp LGUI       &kp LCTRL                            &kp RCTRL  &kp RGUI          &none        &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S    &kp SQT
- &kp LEFT_SHIFT       &kp MINUS           &kp Q          &kp J          &kp K     &kp X           &none            &none  &kp LEFT_ARROW      &none      &none      &kp PG_UP     &none          &none        &kp B          &kp M          &kp W           &kp V           &kp Z  &kp SLASH
-          &mo 1       &kp GRAVE          &kp AT       &kp HASH     &kp DOLLAR  &kp BSPC  &macro_ctrl_up  &kp RIGHT_ARROW       &kp PG_DN  &kp ENTER  &kp SPACE  &kp AMPERSAND  &kp STAR      &kp CARET  &kp PERCENT         &tog 1
+  &kp ESC            &pd1            &pd2           &pd3           &pd4      &pd5          &tog 1     &mo 2       &pd6       &pd7       &pd8           &pd9      &pd0          &none
+  &kp TAB   &kp SEMICOLON       &kp COMMA        &kp DOT          &kp P     &kp Y           &none     &none      &kp F      &kp G      &kp C          &kp R     &kp L  &kp BACKSLASH
+ &kp CAPS  &lh_hm LSHFT A  &lh_hm LCTRL O  &lh_hm LALT E  &lh_hm LGUI U     &kp I           &none  &kp LEFT  &kp RIGHT                                &none     &none          &none        &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S    &kp SQT
+    &none       &kp MINUS           &kp Q          &kp J          &kp K     &kp X           &none     &none     &kp UP      &none      &none      &kp PG_UP     &none          &none        &kp B          &kp M          &kp W           &kp V           &kp Z  &kp SLASH
+    &mo 1       &kp GRAVE          &kp AT       &kp HASH     &kp DOLLAR  &kp BSPC  &macro_ctrl_up  &kp DOWN  &kp PG_DN  &kp ENTER  &kp SPACE  &kp AMPERSAND  &kp STAR      &kp CARET  &kp PERCENT         &tog 1
             >;
         };
 
@@ -175,16 +175,6 @@
  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans           &kp Z           &kp X            &kp C  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
   &to 0  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_SHIFT {
-            bindings = <
-    &trans          &kp N1         &kp N2            &kp N3  &kp N4  &kp N5  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-    &trans       &kp COLON  &kp LESS_THAN  &kp GREATER_THAN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-    &trans          &trans         &trans            &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOUBLE_QUOTES
- &sk LSHFT  &kp UNDERSCORE         &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &sk RSHFT
-    &trans          &trans         &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
