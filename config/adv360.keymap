@@ -18,6 +18,7 @@
 / {
     behaviors {
         #include "macros.dtsi"
+
         lh_hm: left_hand_home_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_HOME_ROW";
@@ -133,16 +134,17 @@
                 <&kp N1>;
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-        &kp ESC           &pd1          &pd2           &pd3    &pd4      &pd5          &tog 1            &mo 2            &pd6       &pd7       &pd8       &pd9       &pd0      &kp MINUS
-        &kp TAB     &kp SEMICOLON        &kp COMMA         &kp DOT                       &kp P                   &kp Y           &none            &none                    &kp F                        &kp G                  &kp C           &kp R                  &kp L  &kp BACKSLASH
-       &kp CAPS    &lh_hm LSHFT A   &lh_hm LCTRL O   &lh_hm LALT E               &lh_hm LGUI U                   &kp I           &none         &kp LGUI                &kp LCTRL                                                           &kp RCTRL               &kp RGUI          &none      &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S          &kp SQT
- &kp LEFT_SHIFT         &kp MINUS            &kp Q           &kp J                       &kp K                   &kp X           &none            &none           &kp LEFT_ARROW                        &none                  &none       &kp PG_UP                  &none          &none      &kp B          &kp M          &kp W           &kp V           &kp Z  &kp RIGHT_SHIFT
-          &mo 1         &kp LCTRL     &kp LEFT_ALT   &kp AMPERSAND                       &none                &kp BSPC  &macro_ctrl_up  &kp RIGHT_ARROW                &kp PG_DN                    &kp ENTER              &kp SPACE           &none              &kp SLASH  &kp RIGHT_ALT  &kp GRAVE         &tog 1
+        &kp ESC            &pd1            &pd2           &pd3           &pd4      &pd5          &tog 1            &mo 2            &pd6       &pd7       &pd8           &pd9      &pd0          &none
+        &kp TAB   &kp SEMICOLON       &kp COMMA        &kp DOT          &kp P     &kp Y           &none            &none           &kp F      &kp G      &kp C          &kp R     &kp L  &kp BACKSLASH
+       &kp CAPS  &lh_hm LSHFT A  &lh_hm LCTRL O  &lh_hm LALT E  &lh_hm LGUI U     &kp I           &none         &kp LGUI       &kp LCTRL                            &kp RCTRL  &kp RGUI          &none        &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S    &kp SQT
+ &kp LEFT_SHIFT       &kp MINUS           &kp Q          &kp J          &kp K     &kp X           &none            &none  &kp LEFT_ARROW      &none      &none      &kp PG_UP     &none          &none        &kp B          &kp M          &kp W           &kp V           &kp Z  &kp SLASH
+          &mo 1       &kp GRAVE          &kp AT       &kp HASH     &kp DOLLAR  &kp BSPC  &macro_ctrl_up  &kp RIGHT_ARROW       &kp PG_DN  &kp ENTER  &kp SPACE  &kp AMPERSAND  &kp STAR      &kp CARET  &kp PERCENT         &tog 1
             >;
         };
 
