@@ -136,11 +136,11 @@
 
         default_layer {
             bindings = <
-  &kp ESC            &pd1            &pd2           &pd3           &pd4      &pd5  &tog 1     &mo 2       &pd6       &pd7       &pd8           &pd9      &pd0          &none
-  &kp TAB   &kp SEMICOLON       &kp COMMA        &kp DOT          &kp P     &kp Y   &none     &none      &kp F      &kp G      &kp C          &kp R     &kp L  &kp BACKSLASH
- &kp CAPS  &lh_hm LSHFT A  &lh_hm LCTRL O  &lh_hm LALT E  &lh_hm LGUI U     &kp I   &none  &kp LEFT  &kp RIGHT                               &tog 4     &none          &none        &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S    &kp SQT
-    &mo 1       &kp MINUS           &kp Q          &kp J          &kp K     &kp X   &none     &none     &kp UP      &none      &none      &kp PG_UP     &none          &none        &kp B          &kp M          &kp W           &kp V           &kp Z  &kp SLASH
-    &none       &kp GRAVE          &kp AT       &kp HASH     &kp DOLLAR  &kp BSPC   &none  &kp DOWN  &kp PG_DN  &kp ENTER  &kp SPACE  &kp AMPERSAND  &kp STAR      &kp CARET  &kp PERCENT         &tog 1
+    &kp ESC            &pd1            &pd2           &pd3           &pd4      &pd5  &tog 1     &mo 2       &pd6       &pd7       &pd8           &pd9      &pd0          &none
+    &kp TAB   &kp SEMICOLON       &kp COMMA        &kp DOT          &kp P     &kp Y   &none     &none      &kp F      &kp G      &kp C          &kp R     &kp L  &kp BACKSLASH
+ &caps_word  &lh_hm LSHFT A  &lh_hm LCTRL O  &lh_hm LALT E  &lh_hm LGUI U     &kp I   &none  &kp LEFT  &kp RIGHT                               &tog 4     &none          &none        &kp D  &rh_hm RGUI H  &rh_hm RALT T  &rh_hm RCTRL N  &rh_hm RSHFT S    &kp SQT
+      &mo 1       &kp MINUS           &kp Q          &kp J          &kp K     &kp X   &none     &none     &kp UP      &none      &none      &kp PG_UP     &none          &none        &kp B          &kp M          &kp W           &kp V           &kp Z  &kp SLASH
+      &none       &kp GRAVE          &kp AT       &kp HASH     &kp DOLLAR  &kp BSPC   &none  &kp DOWN  &kp PG_DN  &kp ENTER  &kp SPACE  &kp AMPERSAND  &kp STAR      &kp CARET  &kp PERCENT         &tog 1
             >;
         };
 
