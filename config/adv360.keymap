@@ -126,7 +126,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
             bindings =
-                <&kp DOLLAR>,
+                <&kp EXCLAMATION>,
                 <&kp N1>;
         };
     };
