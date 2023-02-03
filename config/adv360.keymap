@@ -45,7 +45,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
             bindings =
-                <&kp EXCLAMATION>,
+                <&kp EXCL>,
                 <&kp N0>;
         };
         pd9: prog_dvorak_nine_def {
