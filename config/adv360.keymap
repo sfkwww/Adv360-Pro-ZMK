@@ -15,6 +15,10 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE LEFT RIGHT UP DOWN>;
+};
+
 / {
     behaviors {
         #include "macros.dtsi"
