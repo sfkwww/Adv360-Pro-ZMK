@@ -194,7 +194,7 @@
 &trans        &trans         &kp Q         &kp W         &kp E        &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans
 &trans         &kp O         &kp A         &kp S         &kp D        &trans  &trans  &trans        &trans                                    &trans        &trans  &trans   &kp U  &trans      &trans  &trans   &kp P  &trans
 &trans        &trans     &kp COMMA        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &kp PERIOD  &trans  &trans  &trans
- &to 0        &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
+ &to 0        &trans        &trans        &trans        &trans     &kp SPACE  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
             >;
         };
     };
