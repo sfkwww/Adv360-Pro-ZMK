@@ -192,8 +192,8 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans        &trans         &kp Q         &kp W         &kp E        &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans
-&trans         &kp O         &kp A         &kp S         &kp D        &trans  &trans  &trans        &trans                                    &trans        &trans  &trans   &kp U  &trans      &trans  &trans   &kp P  &trans
-&trans        &trans     &kp COMMA        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &kp PERIOD  &trans  &trans  &trans
+&trans         &kp O         &kp A         &kp S         &kp D        &trans  &trans  &trans        &trans                                    &trans        &trans  &trans   &kp U  &trans  &lh_hm LALT T  &trans   &kp P  &trans
+&trans        &trans     &kp COMMA        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans     &kp PERIOD  &trans  &trans  &trans
  &to 0        &trans        &trans        &trans        &trans     &kp SPACE  &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
             >;
         };
