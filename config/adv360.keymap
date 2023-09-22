@@ -171,7 +171,7 @@
         layer_GAME {
             bindings = <
 &trans          &trans          &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans
-&trans          &trans          &trans          &kp UP_ARROW    &trans           &trans  &trans  &trans  &trans  &trans  &kp UP  &trans     &trans    &trans
+&trans          &trans          &trans          &kp UP_ARROW    &kp E            &kp H   &trans  &trans  &trans  &trans  &kp UP  &trans     &trans    &trans
 &trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp S   &trans  &trans  &trans                  &trans     &trans    &trans  &kp S   &kp LEFT  &kp DOWN  &kp RIGHT  &trans           &trans
 &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V   &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &kp V   &kp C     &kp X     &kp Z      &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
 &to 0           &trans          &trans          &kp LCTRL       &kp LEFT_ALT     &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RALT  &trans  &trans  &trans
