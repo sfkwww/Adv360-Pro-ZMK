@@ -29,9 +29,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;// <---[[produces tap if held longer than tapping-term-ms]]
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
         rh_hm: right_hand_home_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -39,99 +37,77 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
         pd0: prog_dvorak_zero_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd0";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp EXCL>,
-                <&kp N0>;
+            bindings = <&kp EXCL>, <&kp N0>;
         };
         pd9: prog_dvorak_nine_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd9";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp PLUS>,
-                <&kp N9>;
+            bindings = <&kp PLUS>, <&kp N9>;
         };
         pd8: prog_dvorak_eight_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd8";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp RIGHT_BRACE>,
-                <&kp N8>;
+            bindings = <&kp RIGHT_BRACE>, <&kp N8>;
         };
         pd7: prog_dvorak_seven_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd7";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp RIGHT_PARENTHESIS>,
-                <&kp N7>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
         };
         pd6: prog_dvorak_six_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd6";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp RIGHT_BRACKET>,
-                <&kp N6>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp N6>;
         };
         pd5: prog_dvorak_five_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd5";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_BRACKET>,
-                <&kp N5>;
+            bindings = <&kp LEFT_BRACKET>, <&kp N5>;
         };
         pd4: prog_dvorak_four_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd4";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp N4>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp N4>;
         };
         pd3: prog_dvorak_three_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd3";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp LBRC>,
-                <&kp N3>;
+            bindings = <&kp LBRC>, <&kp N3>;
         };
         pd2: prog_dvorak_two_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd2";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp EQUAL>,
-                <&kp N2>;
+            bindings = <&kp EQUAL>, <&kp N2>;
         };
         pd1: prog_dvorak_one_def {
             compatible = "zmk,behavior-mod-morph";
             label = "pd1";
             mods = <(MOD_LSFT|MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings =
-                <&kp EXCLAMATION>,
-                <&kp N1>;
+            bindings = <&kp EXCLAMATION>, <&kp N1>;
         };
     };
 
@@ -170,11 +146,11 @@
 
         layer_GAME {
             bindings = <
-&trans          &trans          &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans
-&trans          &trans          &trans          &kp UP_ARROW    &kp E            &kp H   &trans  &trans  &trans  &trans  &kp UP  &trans     &trans    &trans
-&trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp S   &trans  &trans  &trans                  &trans     &trans    &trans  &kp S   &kp LEFT  &kp DOWN  &kp RIGHT  &trans           &trans
-&kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V   &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &kp V   &kp C     &kp X     &kp Z      &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
-&to 0           &trans          &trans          &kp LCTRL       &kp LEFT_ALT     &trans  &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RALT  &trans  &trans  &trans
+&trans          &trans          &trans          &trans          &trans           &trans     &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans
+&trans          &trans          &trans          &kp UP_ARROW    &kp E            &kp H      &trans  &trans  &trans  &trans  &kp UP  &trans     &trans    &trans
+&trans          &kp A           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp D      &trans  &trans  &trans                  &trans     &trans    &trans  &kp S   &kp LEFT  &kp DOWN  &kp RIGHT  &trans           &trans
+&kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp Z           &kp X           &kp C            &kp V      &trans  &trans  &trans  &trans  &trans  &trans     &trans    &trans  &kp V   &kp C     &kp X     &kp Z      &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
+&to 0           &trans          &trans          &kp LCTRL       &kp LEFT_ALT     &kp SPACE  &trans  &trans  &trans  &trans  &trans  &kp RCTRL  &kp RALT  &trans  &trans  &trans
             >;
         };
 
